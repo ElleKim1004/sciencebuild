@@ -123,6 +123,12 @@
   .apply li b{color:#fff}
   .btn-invert{background:#fff;color:var(--brand);box-shadow:none;margin-top:8px}
   .apply-grid{align-items:center}
+  .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+  .contact-info{position:sticky;top:96px}
+  .blog-link{color:#fff;font-weight:700}
+  .form-card{background:#fff;color:var(--ink);border-radius:16px;padding:28px 28px 8px;box-shadow:0 24px 60px rgba(0,0,0,.22)}
+  .form-card iframe{display:block;width:100%;border:0;min-height:600px}
+  #contact{scroll-margin-top:60px}
   footer{padding:36px 0;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
   /* motion */
   .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
@@ -135,7 +141,9 @@
     .grid3,.steps,.aud,.reasons{grid-template-columns:1fr 1fr}
     .reason:nth-child(2){border-right:0}
     .reason:nth-child(-n+2){border-bottom:1px solid var(--line)}
-    .apply-grid{grid-template-columns:1fr}
+    .apply-grid,.contact-grid{grid-template-columns:1fr}
+    .contact-info{position:static}
+    .form-card{padding:20px 16px 4px}
   }
   @media (max-width:560px){
     .hero{padding:56px 0 48px}
@@ -160,7 +168,7 @@
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#">Science<span>Build</span></a>
-    <a class="btn btn-sm" href="https://blog.naver.com/sciencebuild" target="_blank" rel="noopener">문의하기</a>
+    <a class="btn btn-sm" href="#contact">문의하기</a>
   </div>
 </header>
 
@@ -174,7 +182,7 @@
       <h1>우리 건물은<br><em>준비되어 있나요?</em></h1>
       <p class="lead">2027년 7월 19일부터 연면적 5천㎡ 이상 건축물은 모두 정보통신설비 유지보수·관리 의무 대상이 됩니다(정보통신공사업법, 공동주택 제외). 관리자를 두지 않거나 점검을 하지 않으면 최대 300만원의 과태료가 부과될 수 있습니다.</p>
       <div class="cta-row">
-        <a class="btn btn-lg" href="https://blog.naver.com/sciencebuild" target="_blank" rel="noopener">우리 건물 해당 여부 문의하기</a>
+        <a class="btn btn-lg" href="#contact">우리 건물 해당 여부 문의하기</a>
         <a class="btn btn-ghost" href="#why">의무 내용·과태료 보기</a>
       </div>
 
@@ -269,7 +277,7 @@
       <h2>문의 후 이렇게 진행됩니다</h2>
       <p class="sub">문의 단계에서 따로 준비하실 서류는 없습니다.</p>
       <div class="steps">
-        <div class="step reveal"><h3>블로그 문의</h3><p>사이언스빌드 블로그에 건물 정보와 궁금한 점을 남겨주세요.</p></div>
+        <div class="step reveal"><h3>문의 남기기</h3><p>페이지 하단 문의 양식에 건물 정보와 궁금한 점을 남겨주세요.</p></div>
         <div class="step reveal"><h3>담당자 답변</h3><p>사이언스빌드 담당자가 확인 후 답변드립니다.</p></div>
         <div class="step reveal"><h3>현황 확인</h3><p>연면적과 용도를 기준으로 의무 해당 여부와 현재 관리 상태를 함께 확인합니다.</p></div>
         <div class="step reveal"><h3>일정·조건 안내</h3><p>희망 시점에 맞춘 도입 일정과 조건을 안내해 드립니다.</p></div>
@@ -285,24 +293,26 @@
         <details><summary>우리 건물이 대상인지 어떻게 알 수 있나요?</summary><p>연면적 5천㎡ 이상이고 공동주택이 아니라면 대상입니다. 연면적은 건축물대장에서 확인할 수 있습니다. 문의하실 때 연면적과 용도를 알려주시면 해당 여부와 시행 시점을 함께 안내해 드립니다.</p></details>
         <details><summary>건물주와 관리회사 중 누가 책임지나요?</summary><p>법에서 정한 관리주체는 건축물의 소유자 또는 관리자입니다. 관리 업무는 정보통신공사업자에게 위탁할 수 있지만, 위탁 계약과 선임 신고가 제대로 되어 있는지 소유자가 확인해 두시는 것이 안전합니다.</p></details>
         <details><summary>도입 시점은 언제로 정해야 하나요?</summary><p>시행 구간에 따라 기한이 다릅니다. 상담 과정에서 우리 건물의 시행일과 선임·점검 일정을 함께 정리합니다.</p></details>
-        <details><summary>문의는 어떻게 하나요?</summary><p>사이언스빌드 네이버 블로그로 문의해 주세요. 페이지의 '문의하기' 버튼을 누르면 블로그로 이동합니다.</p></details>
+        <details><summary>문의는 어떻게 하나요?</summary><p>이 페이지 아래의 문의 양식에 내용을 남겨주시면 담당자가 확인 후 연락드립니다. 어느 위치에서든 '문의하기' 버튼을 누르면 문의 양식으로 이동합니다.</p></details>
       </div>
     </div>
   </section>
 
   <section class="apply" id="contact">
-    <div class="wrap apply-grid">
-      <div>
+    <div class="wrap contact-grid">
+      <div class="contact-info">
         <p class="eyebrow">CONTACT</p>
         <h2>베타점검 도입 문의</h2>
-        <p class="sub">2027년 7월 19일 전면 확대 전에 우리 건물의 해당 여부와 준비 일정을 먼저 확인해 보세요.</p>
-        <a class="btn btn-lg btn-invert" href="https://blog.naver.com/sciencebuild" target="_blank" rel="noopener">블로그로 문의하기 →</a>
-      </div>
-      <div>
+        <p class="sub">2027년 7월 19일 전면 확대 전에 우리 건물의 해당 여부와 준비 일정을 먼저 확인해 보세요. 남겨주신 내용은 담당자가 직접 확인합니다.</p>
         <ul>
-          <li><b>문의 채널</b> 사이언스빌드 네이버 블로그</li>
           <li><b>함께 알려주시면 좋은 내용</b> 건물 소재지 · 연면적 · 용도 · 현재 관리 방식(직접/위탁)</li>
+          <li><b>소요 시간</b> 약 1분</li>
+          <li><b>블로그</b> <a class="blog-link" href="https://blog.naver.com/sciencebuild" target="_blank" rel="noopener">사이언스빌드 네이버 블로그 →</a></li>
         </ul>
+      </div>
+      <div class="form-card">
+        <iframe id="tally-form" data-tally-src="https://tally.so/embed/Yjj0JJ?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1" loading="lazy" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" title="사이언스빌드 베타점검 문의"></iframe>
+        <noscript><a href="https://tally.so/r/Yjj0JJ">문의 양식 열기</a></noscript>
       </div>
     </div>
   </section>
@@ -312,9 +322,21 @@
   <div class="wrap"><span>© 2026 사이언스빌드 (ScienceBuild). All rights reserved.</span><a href="https://blog.naver.com/sciencebuild" target="_blank" rel="noopener">네이버 블로그</a></div>
 </footer>
 
-<div class="mobile-cta"><a class="btn" href="https://blog.naver.com/sciencebuild" target="_blank" rel="noopener">문의하기</a></div>
+<div class="mobile-cta" id="mcta"><a class="btn" href="#contact">문의하기</a></div>
 
 <script>
+  (function(){
+    var f=document.getElementById('tally-form'); if(!f) return;
+    var src=f.getAttribute('data-tally-src'), p=new URLSearchParams(location.search);
+    ['utm_source','utm_medium','utm_campaign','ref'].forEach(function(k){ if(p.get(k)) src+='&'+k+'='+encodeURIComponent(p.get(k)); });
+    if(!p.get('utm_source')&&!p.get('ref')&&document.referrer){ try{ var h=new URL(document.referrer).hostname; if(h!==location.hostname) src+='&ref='+encodeURIComponent(h); }catch(e){} }
+    f.setAttribute('data-tally-src',src);
+    var load=function(){ if(window.Tally) Tally.loadEmbeds(); else if(!f.src) f.src=src; };
+    var sc=document.createElement('script'); sc.src='https://tally.so/widgets/embed.js'; sc.async=true; sc.onload=load; sc.onerror=load; document.body.appendChild(sc);
+    setTimeout(function(){ if(!f.getAttribute('src')) f.src=src; },3000);
+    var m=document.getElementById('mcta'), c=document.getElementById('contact');
+    if(m&&c&&'IntersectionObserver' in window){ new IntersectionObserver(function(es){ m.style.display = es[0].isIntersecting ? 'none' : ''; },{threshold:.05}).observe(c); }
+  })();
   (function(){
     var t=new Date('2027-07-19T00:00:00+09:00'), n=new Date();
     var d=Math.ceil((t-n)/86400000), el=document.getElementById('dday');
