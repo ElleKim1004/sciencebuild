@@ -96,21 +96,21 @@
   .mission{margin-top:44px;padding:26px 28px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 var(--radius) var(--radius) 0}
   .mission p{margin:0;color:var(--ink-2)}
   .mission b{color:var(--ink)}
-  .hero-stage{position:relative;overflow:hidden;background:#0b1b38;color:#fff;min-height:clamp(600px,calc(100vh - 60px),860px);display:flex;align-items:center}
+  .hero-stage{position:relative;overflow:hidden;background:#0b1b38;color:#fff;min-height:600px;display:flex;align-items:center}
   .hero-stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
   .stage-veil{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 46% 62% at 50% 46%,rgba(11,27,56,.82) 0%,rgba(11,27,56,.55) 45%,rgba(11,27,56,0) 78%)}
-  .stage-center{position:relative;z-index:1;text-align:center;max-width:760px;padding-top:72px;padding-bottom:88px}
+  .stage-center{position:relative;z-index:1;text-align:center;max-width:760px;padding-top:28px;padding-bottom:44px}
   .stage-center .badge-row{justify-content:center}
-  .stage-center h1{color:#fff;font-size:clamp(34px,6vw,64px);margin:22px 0 20px}
+  .stage-center h1{color:#fff;font-size:clamp(32px,4.6vw,52px);line-height:1.18;margin:16px 0 14px}
   .stage-center h1 em{color:#7ce6ff}
-  .stage-center .lead{color:#c9d6ee;margin:0 auto 34px;max-width:600px}
+  .stage-center .lead{color:#c9d6ee;margin:0 auto 26px;max-width:700px;font-size:clamp(15px,1.6vw,17px)}
   .stage-center .cta-row{justify-content:center}
   .badge-glow{background:#5ee0c0;color:#0b1b38}
   .badge-line{background:rgba(255,255,255,.08);color:#dbe7ff;border:1px solid rgba(255,255,255,.18)}
   .btn-on-dark{background:#fff;color:var(--brand);box-shadow:0 10px 30px rgba(0,0,0,.25)}
   .btn-ghost-dark{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}
   .btn-ghost-dark:hover{background:rgba(255,255,255,.08)}
-  .hv-tag{display:inline-flex;align-items:center;gap:8px;margin:40px 0 0;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.07);color:#b7c8e6;font-size:12.5px;font-weight:600;border:1px solid rgba(255,255,255,.14)}
+  .hv-tag{position:absolute;z-index:1;left:50%;bottom:20px;transform:translateX(-50%);white-space:nowrap;display:inline-flex;align-items:center;gap:8px;margin:0;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.07);color:#b7c8e6;font-size:12.5px;font-weight:600;border:1px solid rgba(255,255,255,.14)}
   .hero{padding:72px 0 72px}
   .hero .h-block:first-child{margin-top:0}
   .hv-tag .dot{width:8px;height:8px;border-radius:50%;background:#5ee0c0;box-shadow:0 0 0 0 rgba(94,224,192,.7);animation:ping 1.8s infinite}
@@ -220,8 +220,8 @@
         <a class="btn btn-lg btn-on-dark" href="#contact">우리 건물 해당 여부 문의하기</a>
         <a class="btn btn-ghost btn-ghost-dark" href="#why">의무 내용·과태료 보기</a>
       </div>
-      <p class="hv-tag"><span class="dot"></span>정보통신설비 실시간 진단 중</p>
     </div>
+    <p class="hv-tag"><span class="dot"></span>정보통신설비 실시간 진단 중</p>
   </section>
 
   <div class="hero">
@@ -282,7 +282,7 @@
   <section id="team">
     <div class="wrap">
       <p class="eyebrow">FOUNDER &amp; TEAM</p>
-      <h2>데이터를 연구해 온 대표와<br>개발팀이 베타점검을 만듭니다</h2>
+      <h2>건물의 위험을<br>감지하는 사람들</h2>
       <p class="sub">전국 약 800만 동의 건축물을 사람이 모두 직접 점검하기는 어렵습니다. 사이언스빌드는 건축물의 설계 정보로 먼저 진단하고, 고장이 예측되는 건물부터 점검하는 방식을 만들고 있습니다.</p>
       <div class="team-grid">
         <div class="portrait reveal">
